@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO APP</title>
+    <!-- BS CSS LINKS  -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/b89a637984.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid text-center bg-success text-white mb-5">
+        <h1 class="p-3">To-Do App</h1>
+    </div>
+   <div class="container">
+        <div class="form-inline text-center mb-4">
+            <span class="form-item p-5 border-success ">
+                    <input type="text" name="" id="task-name" placeholder="Name of the task" class="border-success border-2 p-2">
+            </span>
+            <span class="form-item p-5 border-success">
+                    <input type="time" name="" id="task-time" placeholder="Time" class="border-success border-2 p-2">
+            </span>
+            <span class="form-item p-5 ">
+                    <label for=""><input type="checkbox" name="Completed" id="check-box">  Completed</label>
+            </span> 
+        </div>
+        <div class="text-center mb-4">
+            <button id="submit-btn" class="btn btn-success btn-lg text-center rounded" type="submit">Add Task</button>  
+
+        </div>
+        <div class="container p-3"><h3 class="text-success">TASKS :</h3></div>
+
+        <ul>
+            <li class="card">
+                <div class="card-item p-2 mr-3"> 
+                    <div class="d-flex justify-content-between">
+                        <div>Name (Time)</div>
+                        <button class="btn btn-outline-danger"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+     
+   </div>
+
+   <script src="main.js"></script>
+</body>
+</html>
